@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register As NGO</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="author" content="Lorenzo Angelino aka MrLolok">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #deffd8;
+        }
+
+        #container-register {
+    background-color: #127600;
+    position: relative;
+    top: 20%;
+    margin: auto;
+    width: 340px;
+    height: 780px;
+    padding: 20px 0px;
+    bottom: 30%;
+    border-radius: 0.35em;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.input {
+    margin: auto;
+    width: 240px;
+    border-radius: 4px;
+    background-color: #deffd8;
+    padding: 8px 0px;
+    margin-top: 15px;
+}
+
+.input-addon {
+    float: left;
+    background-color: #373E4A;
+    border: 1px solid #373E4A;
+    padding: 4px 8px;
+    border-right: 1px solid #F2F2F2;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="container-register">
+        <div id="title">
+            <i class="material-icons lock">lock</i> Register
+        </div>
+
+        <form method="POST" action="/submit">
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">domain</i>
+                </div>
+                <input id="ngo_name" value = "NameNGO" placeholder="NGO name" type="text" required class="validate" autocomplete="off" name="ngo_name">
+            </div>
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">email</i>
+                </div>
+                <input  placeholder="Email" value = "NameNGO@gmail.com" type="email" required class="validate" autocomplete="off" name="email">
+            </div>
+
+            <div class="clearfix"></div>
+            <div class="input">
+                <div class="input-addon">
+                     <i class="material-icons">foundation</i>
+                 </div>
+                <input id="founder" placeholder="Founder" value = "Dahit" type="text" required class="validate" autocomplete="off" name="founder">
+            </div>
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">calendar_today</i>
+                </div>
+                <input id="date" placeholder="NGO start date" value = "2000-05-05" type="date" required class="validate" autocomplete="off" name="start_date">
+            </div>
+            <div class="input">
+                <div class="input-addon">
+                     <i class="material-icons">phone</i>
+                 </div>
+                <input id="phone" placeholder="phone no" value = "9955262206" type="text" required class="validate" autocomplete="off" name="phone">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                     <i class="material-icons">home</i>
+                 </div>
+                <input id="address" placeholder="address" value = "ecity , banglore"type="text" required class="validate" autocomplete="off" name="address">
+            </div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input id="POC_name" placeholder="Point of contact name" value = "sony "type="text" required class="validate" autocomplete="off" name="poc_name">
+            </div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">call_end</i>
+                </div>
+                <input id="POC_no" placeholder="Point of contact number" value = "9955262202" type="text" required class="validate" autocomplete="off" name="poc_no">
+            </div>
+            
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input id="password" placeholder="Password" value = "password" type="password" required class="validate" autocomplete="off" name="password1">
+            </div>
+            
+            
+
+
+            <div class="remember-me">
+                <input type="checkbox" name="check">
+                <span style="color: #DDD">I accept Terms of Service</span>
+            </div>
+
+            <button type="submit" href="register_sh.html" >Register</button>
+        </form>
+
+        <div class="privacy">
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="register">
+            Do you already have an account?
+            <a href="login.html"><button id="register-link">Log In here</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
